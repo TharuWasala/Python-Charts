@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+
+# Data for the bar chart
+categories = ['Apples', 'Bananas', 'Cherries', 'Dates']
+values = [25, 30, 20, 25]
+colors = ['#ff9999','#66b3ff','#99ff99','#ffcc99']
+
+# Create the bar chart
+plt.figure(figsize=(8, 6))
+plt.bar(categories, values, color=colors)
+
+# Add labels and title
+plt.xlabel('Fruits')
+plt.ylabel('Quantity')
+plt.title('Fruit Quantity Comparison')
+
+# Show the plot
+plt.show()
