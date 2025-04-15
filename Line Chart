@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+
+# Sample data
+months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+sales = [150, 180, 220, 260, 300, 310]
+
+# Create the line chart
+plt.figure(figsize=(8, 5))
+plt.plot(months, sales, marker='o', linestyle='-', color='teal', linewidth=2)
+
+# Add labels and title
+plt.xlabel('Month')
+plt.ylabel('Sales ($)')
+plt.title('Monthly Sales Growth')
+plt.grid(True)
+
+# Show the plot
+plt.show()
